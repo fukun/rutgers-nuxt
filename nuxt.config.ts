@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
+    '@nuxt/content', '@nuxtjs/tailwindcss'
   ],
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   future: {
     compatibilityVersion: 4,
   },

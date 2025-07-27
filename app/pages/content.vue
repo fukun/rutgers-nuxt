@@ -1,4 +1,5 @@
 <script setup lang="ts">
+//原文件名[...slug]
 const route = useRoute()
 
 const { data: page } = await useAsyncData('page-' + route.path, () => {
@@ -11,8 +12,12 @@ if (!page.value) {
 </script>
 
 <template>
-  <ContentRenderer
-    v-if="page"
-    :value="page"
-  />
+  <div>
+    <div >xxx</div>
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+    />
+  </div>
+
 </template>
