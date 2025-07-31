@@ -183,6 +183,30 @@
                     </div>
                 </div>
                 <div class="h-[70px]"></div>
+                <div class="flex justify-between border-t pt-[20px]">
+                    <div></div>
+                    <div class="flex gap-[18px]">
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/twitter.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/facebook.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/linkedin.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/youtube.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/instagram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="social-icon-button" src="~/assets/svg/tiktok.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="h-[50px]"></div>
             </div>
         </div>
     </div>
@@ -196,5 +220,9 @@ import { IdentificationIcon } from '@heroicons/vue/24/outline';
 .need-more-info {
     background-color: #a41034;
     background-image: linear-gradient(121deg, transparent 85%, #891f34 85%), linear-gradient(51deg, #891f34 15%, transparent 15%);
+}
+
+.social-icon-button {
+    @apply cursor-pointer opacity-80 hover:opacity-100 h-[22px];
 }
 </style>
