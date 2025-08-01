@@ -1,8 +1,8 @@
 <template>
     <div>
-        <Header></Header>
+        <layout-header></layout-header>
         <slot />
-        <Footer></Footer>
+        <layout-footer></layout-footer>
     </div>
 </template>
 <script lang="ts" setup></script>

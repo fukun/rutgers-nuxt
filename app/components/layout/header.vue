@@ -14,7 +14,7 @@
         </div>
         <div v-if="children.length" class="absolute top-[85px] w-[100%] h-[calc(100vh-85px)] flex flex-col ">
             <div class="bg-white pb-[30px]">
-                <Header_SubMenu :children="children" :padding-left="childrenPaddingLeft"></Header_SubMenu>
+                <layout-sub-menu :children="children" :padding-left="childrenPaddingLeft"></layout-sub-menu>
             </div>
             <div class="bg-black/[0.55] flex-auto" @mouseenter="menuKey = ''"></div>
         </div>
@@ -25,16 +25,6 @@ import { Bars4Icon } from '@heroicons/vue/24/solid'
 
 const menuData = [
     { name: "Home", path: "/" },
-    {
-        name: "About Us", path: "/", children: [
-            { name: "History", path: "/" },
-            { name: "Advisory board", path: "/" },
-            { name: "Faculty", path: "/" },
-            { name: "Ph.D students / Visiting Scholars", path: "/" },
-            { name: "Alumni", path: "/" },
-            { name: "Our Alliances", path: "/" },
-        ]
-    },
     {
         name: "Digital Library & Learning", path: "/", children: [
             { name: "Accounting Digital Library on Youtube ", path: "/" },
@@ -55,7 +45,23 @@ const menuData = [
             { name: "See More", path: "/" },
         ]
     },
+    {
+        name: "About Us", path: "/", children: [
+            { name: "History", path: "/" },
+            { name: "Advisory board", path: "/" },
+            { name: "Faculty", path: "/" },
+            { name: "Ph.D students / Visiting Scholars", path: "/" },
+            { name: "Alumni", path: "/" },
+            { name: "Our Alliances", path: "/" },
+        ]
+    },
 ];
+
+const { data: faculty } = await useAsyncData('faculty', () => {
+    return queryCollection('faculty')
+        .all()
+});
+console.log(faculty, 'faculty', faculty.value)
 
 const menuKey = ref('');
 const children = computed(() => {
