@@ -1,3 +1,4 @@
+```markdown
 
 ::index-section-introduction
 ::
@@ -19,3 +20,4 @@
 ::
 ::index-section-faq
 ::
+```
