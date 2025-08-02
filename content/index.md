@@ -1,5 +1,3 @@
-```markdown
-
 ::index-section-introduction
 ::
 ::index-section-course
@@ -20,4 +18,3 @@
 ::
 ::index-section-faq
 ::
-```
