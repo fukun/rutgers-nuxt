@@ -7,6 +7,7 @@
                 {{ `${cate}`
                 }}</a>
         </div>
+        <div class="h-[50px]"></div>
     </section>
 </template>
 <script lang="ts" setup>

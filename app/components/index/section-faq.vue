@@ -40,3 +40,9 @@
         </div>
     </section>
 </template>
+
+<style lang="css" scoped>
+.social-icon-button {
+    @apply cursor-pointer opacity-80 hover:opacity-100 h-[22px];
+}
+</style>

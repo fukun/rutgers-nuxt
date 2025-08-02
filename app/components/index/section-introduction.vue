@@ -3,7 +3,7 @@
         class="h-[425px] bg-center bg-no-repeat bg-cover bg-[url(https://cloudinary.hbs.edu/hbsit/image/upload/s--7nNNGlCR--/f_auto,c_fill,w_1402,/v20200101/E312D046211DEAD6A46E0A972D7F5FB5.jpg)]">
         <div class="w-[1180px] flex mx-auto">
             <div class="flex-none w-[50%] text-white pt-[50px]">
-                <div class="text-[17px]">
+                <div class="text-[17px] pt-[5px]">
                     <strong class="font-bold">Since 1994, the Rutgers Accounting Web has been a hub for accounting
                         research,</strong>
                     hosting the American Accounting Association, the Academy of Accounting Historians, the Ph.D.

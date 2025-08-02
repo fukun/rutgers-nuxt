@@ -30,7 +30,13 @@
             </div>
         </a>
         <div class="pt-[12px] flex justify-center">
-            <a-red-outline title="Explore all Courses"></a-red-outline>
+            <ui-a-red-outline title="Explore all Courses"></ui-a-red-outline>
         </div>
+        <div class="h-[64px] w-[100%]"></div>
     </div>
 </template>
+<script lang="ts" setup>
+import { IdentificationIcon } from '@heroicons/vue/24/outline';
+
+
+</script>
