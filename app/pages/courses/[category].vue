@@ -12,18 +12,18 @@
         <div v-else-if="courses && courses.length > 0">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div v-for="(course, index) in courses" :key="index"
-                    class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
+                    class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
                     <div class="flex-grow">
                         <h2 class="text-xl font-semibold mb-2 text-gray-800">
                             {{ course.lecture }}
                         </h2>
-                        <p class="text-gray-600 mb-4">
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-4">
+                        <p class="text-gray-600">
                             <span class="font-medium">Lecturer:</span> {{ course.lecturer }}
                         </p>
-                    </div>
-                    <div class="mt-auto">
                         <a :href="course.link" target="_blank"
-                            class="inline-flex items-center px-4 py-2 bg-[#CC0033] text-white rounded hover:bg-[#990022] transition-colors">
+                            class="inline-flex items-center px-4 py-2 whitespace-nowrap bg-[#CC0033] text-white rounded hover:bg-[#990022] transition-colors">
                             <icon-youtube class="mr-2" :width="20" :height="20" />
                             Watch on YouTube
                         </a>
@@ -47,7 +47,7 @@ const category = route.params.category as string;
 // 获取课程数据
 const { data, pending } = await useAsyncData(`courses-${category}`, () => {
     return queryCollection('courses')
-        .where('stem', '=', `courses/${category.replaceAll('/', '_')}`)
+        .where('stem', '=', `courses/${category}`)
         .first()
 });
 

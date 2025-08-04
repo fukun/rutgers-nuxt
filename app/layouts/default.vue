@@ -8,3 +8,8 @@
     </div>
 </template>
 <script lang="ts" setup></script>
+<style lang="css">
+* {
+    scroll-margin-top: 106px;
+}
+</style>

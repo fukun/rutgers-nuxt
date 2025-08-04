@@ -1,0 +1,79 @@
+id: 63
+title: 63rd World Continuous Auditing & Reporting Symposium
+city: Newark, NJ
+date: Nov.8 & 9,2024
+img: https://raw.rutgers.edu/63WCARS/Title%20Picture.png
+desc: The 63rd World Continuous Auditing & Reporting Symposium will be held in person and online. Registration is required to access the event
+about:
+  - url: https://raw.rutgers.edu/63WCARS/WCARS%20announcement%202024.pdf
+    label: 'Announcement'
+  - url: https://raw.rutgers.edu/63WCARS/63wcars_hotel.html
+    label: Hotel information
+  - url: https://raw.rutgers.edu/63WCARS/WCARS%202024%20-%20Full%20Agenda.pdf
+    label: Agenda
+  - url: https://raw.rutgers.edu/63WCARS/63%20WCARS-Biographies.pdf
+    label: Speaker Profiles
+  - url: https://raw.rutgers.edu/63WCARS/Pre-Conference%20Materials%20and%20Preparation%20Guide.pdf
+    label: Pre-Conference Materials and Preparation Guide
+  - url: https://raw.rutgers.edu/63WCARS/63%20WCAR%20CPE%20Certificate%20Request%20Form.docx
+    label: CPE Certificate Form
+note:
+  - url: https://raw.rutgers.edu/63WCARS/63%20WCARS-Registration%20Fees.pdf
+    label: Payment & Fee Information
+  - url: https://www.eventbrite.com/e/63rd-world-continuous-auditing-reporting-symposium-wcars-2024-tickets-1002651035237
+    label: Registration
+  - url: https://raw.rutgers.edu/63WCARS/63%20WCARS-Evaluation%20Form%20Nov.%208,%202024.pdf
+    label: Evaluation Form Nov. 8th
+  - url: https://raw.rutgers.edu/63WCARS/63%20WCARS-Evaluation%20Form%20Nov.%209,%202024.pdf
+    label: Evaluation Form Nov. 9th
+  - url: https://raw.rutgers.edu/63WCARS/Pre-Event%20Preparation.pdf
+    label: Pre-Event Preparation
+presentations:
+  - session:
+    list:
+      - presenters: Miklos Vasarhelyi
+        presentations: Intro to AI
+        video: https://www.youtube.com/watch?v=bbfu31Ychzg
+  - session: | 
+      SESSION 1: Overview of Generative AI
+    list:
+      - presenters: Eric Cohen	
+        presentations: The State of the Art of GenAI	
+        video: https://www.youtube.com/watch?v=VVyr7aKFBN4
+      - presenters: Harry Gao
+        presentations: |
+          Overview of Python in Google Co-Lab
+          Build a GenAI Model in Google Co-Lab
+        video: 
+  - session: |
+      SESSION 2: Auditing and Process Mining
+    list:
+      - presenters: Huaxia Li	
+        presentations: Prompt Engineering Principles in GenAI
+        video: https://www.youtube.com/watch?v=Y6Byw0v_s-4
+      - presenters: Marco Schreyer
+        presentations: Agentic AI	
+        video: https://www.youtube.com/watch?v=6QBir3ahkKM
+      - presenters: Jumi Kim
+        presentations: AI and Process Mining	
+        video: https://www.youtube.com/watch?v=TDvaVU_Bdms
+  - session: |
+      SESSION 3: Challenges in the AI World
+    list:
+      - presenters: Ricardo Vilanova, Dan Meers, Joseph Nunes, Matthew Glessner	
+        presentations: Roundtable Discussion – Risk, Security, and Governance in the AI World	
+        video: https://www.youtube.com/watch?v=nhVRQ4wyTb8
+  - session: |
+      SESSION 4: ESG and Robotic Process Automation (RPA)
+    list:
+      - presenters: Irina Bao
+        presentations: GenAI and ESG	
+        video: 
+      - presenters: Shaoyu Liu
+        presentations: Overview of RPA	
+        video: 
+      - presenters: Shaoyu Liu
+        presentations: A Convergence of RPA and GenAI	
+        video: 
+
+ 

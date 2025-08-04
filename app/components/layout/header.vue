@@ -8,7 +8,9 @@
             </div>
             <ul class="flex items-center justify-center flex-grow">
                 <li :class="`menu-li ${menuKey === item.name ? 'menu-li-hover' : ''}`" v-for="item of menuData"
-                    :key="item.name" @mouseenter="e => onMouseEnter(e, item.name)">{{ item.name }}</li>
+                    :key="item.name" @mouseenter="e => onMouseEnter(e, item.name)">
+                    <a :href="item.path">{{ item.name }}</a>
+                </li>
             </ul>
             <Bars4Icon class="size-[24px]"></Bars4Icon>
         </div>
@@ -26,7 +28,7 @@ import { Bars4Icon } from '@heroicons/vue/24/solid'
 const menuData = [
     { name: "Home", path: "/" },
     {
-        name: "Digital Library & Learning", path: "/", children: [
+        name: "Digital Library & Learning", path: "#courses", children: [
             { name: "Accounting Digital Library on Youtube ", path: "/" },
             {
                 name: "Coursera", path: "/", children: [
@@ -45,7 +47,7 @@ const menuData = [
         ]
     },
     {
-        name: "Seminars & Symposia", path: "/", children: [
+        name: "Seminars & Symposia", path: "#wcars", children: [
             { name: "AIS & Accounting Weekly Seminars", path: "/" },
             { name: "WCARS", path: "/" },
             { name: "See More", path: "/" },
