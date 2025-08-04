@@ -2,7 +2,6 @@
     <div>
         <index-section-introduction></index-section-introduction>
         <index-section-course></index-section-course>
-
         <ui-divider1 title="Now Offering Launching Tech Ventures On-Demand – Todo"></ui-divider1>
         <index-section-aa></index-section-aa>
         <ui-divider1 title="Featured Courses – Todo"></ui-divider1>

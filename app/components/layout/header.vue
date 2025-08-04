@@ -14,7 +14,7 @@
         </div>
         <div v-if="children.length" class="absolute top-[85px] w-[100%] h-[calc(100vh-85px)] flex flex-col ">
             <div class="bg-white pb-[30px]">
-                <layout-sub-menu :children="children" :padding-left="childrenPaddingLeft"></layout-sub-menu>
+                <layout-sub-menu :list="children" :padding-left="childrenPaddingLeft"></layout-sub-menu>
             </div>
             <div class="bg-black/[0.55] flex-auto" @mouseenter="menuKey = ''"></div>
         </div>
@@ -28,14 +28,20 @@ const menuData = [
     {
         name: "Digital Library & Learning", path: "/", children: [
             { name: "Accounting Digital Library on Youtube ", path: "/" },
-            { name: "Coursera", path: "/" },
+            {
+                name: "Coursera", path: "/", children: [
+                    { name: 'AI Ethics in Business', path: 'https://coursera.org/learn/ai-ethics-business' },
+                    { name: 'Generative AI & Governmental Financial Reporting', path: 'https://coursera.org/learn/gen-ai-gov-financial-reporting' },
+                    { name: 'Generative AI and ESG', path: 'https://coursera.org/learn/genai-and-esg' },
+                    { name: 'RPA in Accounting and Auditing', path: 'https://coursera.org/learn/robotic-process-automation-rpa' },
+                ]
+            },
             { name: "SWAM/BYOC ", path: "/" },
         ]
     },
     {
         name: "AIS Research", path: "/", children: [
             { name: "Publications", path: "/" },
-            { name: "Current Research Projects ", path: "/" },
         ]
     },
     {
@@ -49,7 +55,21 @@ const menuData = [
         name: "About Us", path: "/", children: [
             { name: "History", path: "/" },
             { name: "Advisory board", path: "/" },
-            { name: "Faculty", path: "/" },
+            {
+                name: "Faculty", path: "/", children: [
+                    { name: 'Miklos Vasarhelyi', path: 'https://www.business.rutgers.edu/faculty/miklos-vasarhelyi' },
+                    { name: 'Michael Alles', path: 'https://www.business.rutgers.edu/faculty/michael-alles' },
+                    { name: 'Hilal Atasoy', path: 'https://www.business.rutgers.edu/faculty/hilal-atasoy' },
+                    { name: 'Helen Brown-Liburd', path: 'https://www.business.rutgers.edu/faculty/helen-brown-liburd' },
+                    { name: 'Soohyun Cho', path: 'https://www.business.rutgers.edu/faculty/soohyun-cho' },
+                    { name: 'Hussein Issa', path: 'https://www.business.rutgers.edu/faculty/hussein-issa' },
+                    { name: 'Alexander Kogan', path: 'https://www.business.rutgers.edu/faculty/alexander-kogan' },
+                    { name: 'Kyungha (Kari) Lee', path: 'https://www.business.rutgers.edu/faculty/kyungha-kari-lee' },
+                    { name: 'Ann Medinets', path: 'https://www.business.rutgers.edu/faculty/ann-medinets' },
+                    { name: 'Kevin C. Moffitt', path: 'https://www.business.rutgers.edu/faculty/kevin-c-moffitt' },
+                    { name: 'Won Gyun No', path: 'https://www.business.rutgers.edu/faculty/won-gyun-no' },
+                ]
+            },
             { name: "Ph.D students / Visiting Scholars", path: "/" },
             { name: "Alumni", path: "/" },
             { name: "Our Alliances", path: "/" },
@@ -57,11 +77,6 @@ const menuData = [
     },
 ];
 
-const { data: faculty } = await useAsyncData('faculty', () => {
-    return queryCollection('faculty')
-        .all()
-});
-console.log(faculty, 'faculty', faculty.value)
 
 const menuKey = ref('');
 const children = computed(() => {
