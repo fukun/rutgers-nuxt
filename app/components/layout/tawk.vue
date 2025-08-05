@@ -1,5 +1,4 @@
 <template>
-    <div class="bg-amber-300">ddd</div>
 </template>
 <script lang="ts" setup>
 // Tawk.to API 声明
@@ -19,7 +18,6 @@ declare global {
 
 window.Tawk_API = window.Tawk_API || {};
 window.Tawk_LoadStart = new Date();
-console.log('xxxxxxxxxxxxx')
 
 onMounted(() => {
     const s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
