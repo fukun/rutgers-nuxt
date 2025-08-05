@@ -1,0 +1,1 @@
+import{_ as s,f as r,g as n,a0 as o}from"./eLPLCPke.js";const t={};function a(e,c){return n(),r("li",null,[o(e.$slots,"default")])}const _=Object.assign(s(t,[["render",a]]),{__name:"ProseLi"});export{_ as default};
